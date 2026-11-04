@@ -1,0 +1,14 @@
+# Current state only. Limit 80 lines. No protocol text: link the record that proves each value.
+device: oneplus-instantnoodlep
+updated: 2026-11-04
+next_question: How do we get the first authorized channel into mb005 (USB debugging or fastboot)?
+subsystems:
+  boot:
+    state: untested        # untested | partial | works | broken
+    record: null           # records/<file> that measured it
+  ssh:
+    state: untested
+    record: null
+  wifi:
+    state: untested
+    record: null
