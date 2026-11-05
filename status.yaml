@@ -1,7 +1,7 @@
 # Current state only. Limit 80 lines. No protocol text: link the record that proves each value.
 device: oneplus-instantnoodlep
 updated: 2026-11-05
-next_question: Does the owner accept the community fastboot archive (MD5 a31758dacb832404c4dab4741860f131, third-party origin) as the rescue baseline, or must the official signed OTA be obtained and verified first?
+next_question: Does the owner accept the unverified community archive as the rescue baseline (or require the F.73 OTA first), and may unlock proceed with restore unverified using boot-test-first order?
 subsystems:
   boot:
     state: untested        # untested | partial | works | broken

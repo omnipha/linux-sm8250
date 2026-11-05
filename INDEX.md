@@ -2,15 +2,17 @@
 
 ## Latest 10
 
+- [2026-11-05-193750-rescue-plan-correction](records/2026-11-05-193750-rescue-plan-correction.md) | boot | refuted | linux-sm8250#3 | rescue plan correction
 - [2026-11-05-192826-rescue-plan-stock-images-restore-path](records/2026-11-05-192826-rescue-plan-stock-images-restore-path.md) | boot | confirmed | linux-sm8250#3 | rescue plan stock images restore path
 - [2026-11-05-171422-fastboot-identity-readonly](records/2026-11-05-171422-fastboot-identity-readonly.md) | boot | confirmed | linux-sm8250#1 | fastboot identity readonly
 
 ## By subsystem (latest 3, total in brackets)
 
-### boot [2]
+### boot [3]
+- [2026-11-05-193750-rescue-plan-correction](records/2026-11-05-193750-rescue-plan-correction.md) | boot | refuted | linux-sm8250#3 | rescue plan correction
 - [2026-11-05-192826-rescue-plan-stock-images-restore-path](records/2026-11-05-192826-rescue-plan-stock-images-restore-path.md) | boot | confirmed | linux-sm8250#3 | rescue plan stock images restore path
 - [2026-11-05-171422-fastboot-identity-readonly](records/2026-11-05-171422-fastboot-identity-readonly.md) | boot | confirmed | linux-sm8250#1 | fastboot identity readonly
 
 ## By month
 
-- [2026-11](records/index-2026-11.md) [2]
+- [2026-11](records/index-2026-11.md) [3]
