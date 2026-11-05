@@ -1,7 +1,7 @@
 # Current state only. Limit 80 lines. No protocol text: link the record that proves each value.
 device: oneplus-instantnoodlep
 updated: 2026-11-05
-next_question: Which stock images, partition map and verified restore path make an unlock of mb005 (fastboot kona, slot a, locked) recoverable?
+next_question: Does the owner accept the community fastboot archive (MD5 a31758dacb832404c4dab4741860f131, third-party origin) as the rescue baseline, or must the official signed OTA be obtained and verified first?
 subsystems:
   boot:
     state: untested        # untested | partial | works | broken
