@@ -2,10 +2,13 @@
 
 ## Latest 10
 
-- none yet
+- [2026-11-05-171422-fastboot-identity-readonly](records/2026-11-05-171422-fastboot-identity-readonly.md) | boot | confirmed | linux-sm8250#1 | fastboot identity readonly
 
 ## By subsystem (latest 3, total in brackets)
 
+### boot [1]
+- [2026-11-05-171422-fastboot-identity-readonly](records/2026-11-05-171422-fastboot-identity-readonly.md) | boot | confirmed | linux-sm8250#1 | fastboot identity readonly
+
 ## By month
 
-- none yet
+- [2026-11](records/index-2026-11.md) [1]
