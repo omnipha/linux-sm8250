@@ -1,11 +1,11 @@
 # Current state only. Limit 80 lines. No protocol text: link the record that proves each value.
 device: oneplus-instantnoodlep
-updated: 2026-11-04
-next_question: How do we get the first authorized channel into mb005 (USB debugging or fastboot)?
+updated: 2026-11-05
+next_question: Which stock images, partition map and verified restore path make an unlock of mb005 (fastboot kona, slot a, locked) recoverable?
 subsystems:
   boot:
     state: untested        # untested | partial | works | broken
-    record: null           # records/<file> that measured it
+    record: records/2026-11-05-171422-fastboot-identity-readonly.md
   ssh:
     state: untested
     record: null
