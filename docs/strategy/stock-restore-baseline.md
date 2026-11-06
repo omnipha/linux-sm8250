@@ -13,15 +13,17 @@ link records for the history.
 
 ## Current explanation
 
-A rollback-safe stock baseline can be established on the host by obtaining the indexed full OTA and comparing its image identity with the community archive. A failed or unavailable download, hash, signature, or comparison refutes that explanation.
+The indexed full OTA may give an independent image-identity comparison. Even a match proves neither a working restore nor device fit nor recovery of device-unique partitions. A failed step refutes only that path, not every possible baseline.
 
 ## Next single variable
 
-Obtain the indexed full OTA and measure its published hash, signature, payload image identities, and comparison against the already verified community archive. The issue stops when that comparison is recorded or the download/hash/signature path is recorded as unavailable. It authorizes no unlock, boot, flash, erase, or device read.
+Obtain the indexed full OTA and measure its published hash, signature, payload image identities, and comparison against the integrity-checked community archive. Stop when that comparison is recorded or the download/hash/signature path is recorded as unavailable. This authorizes no unlock, boot, flash, erase, or device read.
+
+Dispatch: issue #6 is ready but unclaimed. The supervisor's selector excludes `linux-sm8250` and returns no candidates, so its queue gate keeps it from firing. An idle worker here is a routing gap, not a measurement. The 403 came from plain `curl`; the index says the hosts need `aria2`, so a first `aria2c` attempt is not a downloader-only retry.
 
 ## Budget and layer switch
 
-The current layer is host artifact verification, not rescue documentation. Budget: one complete OTA acquisition and comparison attempt. If the OTA cannot be obtained or verified, stop repeating it. Fallback: record that no rollback-safe host baseline exists and return the owner decision on unlocking with an unverified community archive. Do not use another device boot as a substitute for this host measurement.
+The current layer is host artifact verification, not rescue documentation. Budget: one complete OTA acquisition and comparison attempt; no downloader-only retries. If it fails, record the exact unavailable step, not a universal impossibility. Fallback: return the unresolved restore and unlock risk to the owner as a genuine decision; do not unlock, flash, or boot a device as a substitute for this host measurement.
 
 ## Not this
 
