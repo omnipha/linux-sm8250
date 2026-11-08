@@ -11,13 +11,12 @@ firmware file; the blob itself is not included.
 
 ## Order
 
-`0002` touches drivers only and applies on its own. `0001` and `0003` both
-edit `sm8250-oneplus-instantnoodlep.dts` from the same base, so they do not
-apply with plain `patch -p1` one after the other. Apply `0003` first, then
-`0001` with a 3-way merge, then `0004`:
+`0002` touches drivers only and applies on its own. Apply the device-tree
+patches in filename order. `0003` is based on the result of `0001`; applying
+the two original diffs independently from the same base does not work:
 
+    git apply patches/0001-oneplus-instantnoodlep-enable-audio.patch
     git apply patches/0003-oneplus-instantnoodlep-camera-dts.patch
-    git apply --3way patches/0001-oneplus-instantnoodlep-enable-audio.patch
     git apply patches/0004-oneplus-instantnoodlep-gpu-fastboot.patch
 
 `0004` enables the GPU with the measured zap-shader firmware name, sets the

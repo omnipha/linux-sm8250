@@ -1,5 +1,5 @@
 diff --git a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
-index ed9550880..a553de81a 100644
+index 399acaa..d87c261 100644
 --- a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
 +++ b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
 @@ -5,6 +5,7 @@
@@ -9,8 +9,8 @@ index ed9550880..a553de81a 100644
 +#include <dt-bindings/clock/qcom,camcc-sm8250.h>
  #include <dt-bindings/clock/qcom,dispcc-sm8250.h>
  #include <dt-bindings/clock/qcom,gcc-sm8250.h>
- #include "sm8250.dtsi"
-@@ -283,6 +284,132 @@ qca639x: qca639x {
+ #include <dt-bindings/sound/qcom,q6asm.h>
+@@ -285,6 +286,132 @@
  		wlan-en-gpios = <&tlmm 20 GPIO_ACTIVE_HIGH>;
  	};
  
@@ -143,7 +143,7 @@ index ed9550880..a553de81a 100644
  	battery: battery {
  		compatible = "simple-battery";
  
-@@ -317,10 +444,24 @@ vreg_l1f_1p1: ldo1 {
+@@ -345,10 +472,24 @@
  			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
  		};
  
@@ -172,7 +172,7 @@ index ed9550880..a553de81a 100644
  			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
  		};
  
-@@ -591,6 +732,218 @@ &adsp {
+@@ -619,6 +760,218 @@
  	status = "okay";
  };
  
@@ -391,7 +391,7 @@ index ed9550880..a553de81a 100644
  &cdsp {
  	firmware-name = "postmarketos/cdsp.mbn";
  	status = "okay";
-@@ -874,6 +1227,115 @@ &qupv3_id_2 {
+@@ -902,6 +1255,115 @@
  &tlmm {
  	gpio-reserved-ranges = <28 4>, <40 4>;
  
